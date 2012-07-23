@@ -426,7 +426,7 @@ Restrictions to keep in mind:
 
 When you have implemented the type you still need to let Doctrine
 know about it. This can be achieved through the
-``Doctrine\ODM\MongoDB\Mapping\Types#registerType($name, $class)``
+``Doctrine\ODM\MongoDB\Mapping\Types\Type#registerType($name, $class)``
 method.
 
 Here is an example:
@@ -439,7 +439,7 @@ Here is an example:
     
     // ...
     
-    use Doctrine\ODM\MongoDB\Types\Type;
+    use Doctrine\ODM\MongoDB\Mapping\Types\Type;
     
     // ...
     
